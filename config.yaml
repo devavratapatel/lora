@@ -1,0 +1,16 @@
+pretrained_model_name_or_path: "stabilityai/stable-diffusion-3-medium-diffusers"
+instance_data_dir: "dataset"
+data_df_path: "sample_embeddings.parquet"
+output_dir: "trained-sd3-lora-miniature"
+instance_prompt: "in the uneyoki art style"
+resolution: 1024
+max_train_steps: 500
+learning_rate: 1e-4
+lr_scheduler: "constant"
+lr_warmup_steps: 0
+train_batch_size: 1
+seed: 0
+mixed_precision: "fp16"
+use_8bit_adam: true
+gradient_accumulation_steps: 4
+gradient_checkpointing: true
