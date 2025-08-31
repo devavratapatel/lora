@@ -17,3 +17,12 @@ We performed lora using the diffusers library. Changed the source code of the co
 | ![Base model output for prompt 2](lora_output/base_output_1.png) | ![LoRA model output for prompt 2](lora_output/output_1.png) |
 | *Prompt: “A cozy bedroom with a messy blanket and phone glowing on the nightstand”* |
 | ![Base model output for prompt 3](lora_output/base_output_2.png) | ![LoRA model output for prompt 3](lora_output/output_2.png) |
+
+Steps:
+1) Clone the Repository
+2) Run till the cell downloading diffusers library
+3) navigate to diffusers->examples->research_projects->sd_lora_3_colab
+4) Create dataset folder and add images along with captions in same named txt files
+5) Replace the compute_embedding.py and train_dreambooth_lora_sd3_miniature.py with the ones give in the repository
+6) Save them
+7) Run the remaining cells
